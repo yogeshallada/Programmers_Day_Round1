@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Programmers Day Task-3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="round1_bs.css">
+    <style type="text/css">
+        button{
+            background-color:white;
+            border-radius:4px;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+        #hb{
+            background: #6f00ff;
+            font-weight: bold;
+        }
+        #i{
+            font-weight: bolder;
+        }
+        #abc{
+            background:darkblue;
+        }
+        #abb{
+            font-weight: bold;
+            color: white;
+        }
+        #ia{
+            font-size: 130%;
+            line-height: 170%;
+        }
+        #ib{
+            font-size: 170%;
+            line-height: 215%;
+        }
+        #ic{
+            font-size: 130%;
+            line-height: 215%;
+        }
+        /*--------------------------------------------------------------
+
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Mulish:wght@400;500;600;700;800;900&display=swap");
+/*--------------------------------------------------------------
+1. Typography
+----------------------------------------------------------------*/
+body,
+html {
+  color: #5d6b85;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.9em;
+  overflow-x: hidden; }
+
+h1,
+h2,
+h3,
+h4,
+h3,
+h6 {
+  clear: both;
+  color: #263a5d;
+  font-family: 'Mulish', sans-serif;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  line-height: 1.25em; }
+
+h1 {
+  font-size: 48px; }
+
+h2 {
+  font-size: 36px; }
+
+h3 {
+  font-size: 30px; }
+
+h4 {
+  font-size: 24px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 15px; }
+
+p {
+  margin-bottom: 12px; }
+
+ul {
+  margin: 0 0 15px 0;
+  padding-left: 15px;
+  list-style: square outside none; }
+
+ol {
+  padding-left: 15px;
+  margin-bottom: 15px; }
+
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-5" id="a">
+        <div class="row">
+            <div class="col-md-3"> <img src="assets/img/t1.svg" alt="Lala" id="k1"></div>
+            <div class="col-md-2"></div>
+           <div class="col-md">
+    <div class="dropdown">
+        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+            Home
+        </button>
+        <ul class="dropdown-menu">
+            <li class="menu-item">
+                <a href="#">Column One</a>
+                <ul>
+                    <li>
+                        <a href='/01_agency_home'>Agency</a>
+                    </li>
+                    <li>
+                        <a href='/02_non_profit_home'>Non-Profit</a>
+                    </li>
+                    <li>
+                        <a href='/03_seo_home'>SEO</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">Column Two</a>
+                <ul>
+                    <li>
+                        <a href='/04_medical_home'>Medical</a>
+                    </li>
+                    <li>
+                        <a href='/05_insurance_home'>Insurance</a>
+                    </li>
+                    <li>
+                        <a href='/06_movers_home'>Movers</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">Column Three</a>
+                <ul>
+                    <li>
+                        <a href='/07_creative_home'>Creative</a>
+                    </li>
+                    <li>
+                        <a href='/08_portfolio_home'>Portfolio</a>
+                    </li>
+                    <li>
+                        <a href='/09_photography_home'>Photography</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item-has-children">
+                <a href="#">Column Four</a>
+                <ul>
+                    <li>
+                        <a href='/'>Landing Page</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </table>
+    </div>
+</div>
+
+            <div class="col-md">
+                <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                            Pages
+                  </button>
+                  <ul class="dropdown-menu">
+                               <ul>
+                                                <a href='/about_1'>About Us V1</a>
+                                            </li>
+                                            <li>
+                                                <a href='/about_2'>About Us V2</a>
+                                            </li>
+                                            <li>
+                                                <a href='/service'>Service</a>
+                                            </li>
+                                            <li>
+                                                <a href='/faq'>FAQ Page</a>
+                                            </li>
+                                            <li>
+                                                <a href='/error'>404 Page</a>
+                                            </li>
+                                            <li>
+                                                <a href='/contact_1'>Contact V1</a>
+                                            </li>
+                                            <li>
+                                                <a href='/contact_2'>Contact V2</a>
+                                            </li>
+                                            <li>
+                                                <a href='/pricing'>Pricing Plan</a>
+                                            </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                    Portfolio
+                  </button>
+                  <ul class="dropdown-menu">
+                   <ul>
+                                            <li>
+                                                <a href='/portfolio_1'>Portfolio 1</a>
+                                            </li>
+                                            <li>
+                                                <a href='/portfolio_2'>Portfolio 2</a>
+                                            </li>
+                                            <li>
+                                                <a href='/portfolio_details'>Portfolio Details</a>
+                                            </li>
+                                       
+                </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                    Blog
+                  </button>
+                  <ul class="dropdown-menu">
+                    <ul>
+                                            <li>
+                                                <a href='/blog_list_right_sidebar'>Blog right sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href='/blog_list_left_sidebar'>Blog left sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href='/blog_grid'>Blog grid view</a>
+                                            </li>
+                                            <li>
+                                                <a href='/blog_details_left_sidebar'>Blog Details Left Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href='/blog_details_right_sidebar'>Blog details right sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href='/blog_details_no_sidebar'>Blog Details no Sidebar</a>
+                                            </li>
+                                        </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                    Contact
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">9515795787</a></li>
+                    <li><a class="dropdown-item" href="#">9908578595</a></li>
+                    <li><a class="dropdown-item" href="#">9014899873</a></li>
+                    <li><a class="dropdown-item" href="#">8374739765</a></li>
+                  </ul>
+                </div>
+            </div>
+            <br><br>
+
+         <div class="cs-hero cs-style1 cs-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="cs-hero__title">
+                    We Are Business Consulting Agency
+                </h1>
+                <div class="cs-hero__subtitle">
+                    We are here to deliver you innovative cool ideas about your business. Come to us and discuss your dream business.
+                </div>
+                <div class="cs-btns cs-style1">
+                    <a class='cs-btn cs-style1 cs-color1 cs-primary__font' href='/about_2'>
+                        <button style="background-color: blueviolet; border-color: darkblueviolet; color: white; font-size: 30px">Learn More</button>
+                    </a>
+                    <a href="#portfolio" class="cs-btn cs-style1 cs-color2 cs-primary_font cs-smooth_move">
+                        <button class="cs-btn__text" style="border-color: blueviolet; margin: 0px; color: blueviolet; font-size: 25px;">See Portfolio</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cs-hero__img cs-parallax">
+                    <div class="cs-to__right">
+                        <img src="img/b1.jpeg" alt="Hero Image" style="height: 400px; width: 500px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Idea Generate</h3>
+                <p>Generate innovative ideas for your business</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-cogs"></i>
+                <h3>Strategy Build</h3>
+                <p>Build effective business strategies</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-bullseye"></i>
+                <h3>Goal Set</h3>
+                <p>Set achievable goals for success</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-handshake"></i>
+                <h3>Relationship</h3>
+                <p>Build strong and lasting relationships</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+    <div class="conatainer-fluid">
+        <div class="row mt-5">
+            <div class="col-7"><img src="img/b2.jpeg" height="100%" width="90%"></div>
+            <div class="col-5" style="text-align:right;font-size: 180%;"><b>our profissional guidence<br> incress success rate</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor.
+            <br>
+            <br>
+
+            <p >our award wining agency</p>
+            <p >many projects are done succesfully</p>
+
+            <p >maintaing relation with clients</p>
+
+            <p >Professional market analysis team</p>
+
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p style="margin-left:15%;font-size: 150%;"> <b>We are powerful Business</b></p>
+                        <p style="margin-left:15%;font-size: 150%;"><b>Consultant Agency</b></p>
+                        <p style="margin-left:15%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                        <button style="background-color:blueviolet;color:white;margin-left:20%;">see projects</button>
+                        <button style="border:1px solid blueviolet;color:blueviolet;margin-left:20%;">free consult</button>
+                    </div>
+                    
+
+                    <div class="col-6"><img src="img/b3.jpg" height="80%" width="85%" style="margin-left: 10%;"></div>
+
+                </div>
+<div class="row mt-5">
+    <div class="col-4"></div>
+    <div class="col-4" style="text-align:center;font-size: 180%;"><b>Choose your Right solution</b></div>
+    <div class="col-4"></div>
+
+</div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8" style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    </div>
+    <div class="col-2"></div>
+
+</div>
+<div class="row mt-5">
+    <div class="col-3"><div class="card" style="text-align:center;"><i class="fa-solid fa-microchip" style="font-size:250%"></i><br>IT CONSULTTING<br><button style="border:1px solid blueviolet;color: blueviolet;width:40%;margin-left: 30%;">join us now</button></div></div>
+    <div class="col-3"><div class="card" style="text-align:center;"><i class="fa-solid fa-coins" style="font-size:250%"></i><br>FINANCIAL PLAN<br><button style="border:1px solid blueviolet;color: blueviolet;width:40%;margin-left: 30%;">join us now</button></div></div>
+    <div class="col-3"><div class="card" style="text-align:center;"><i class="fa-solid fa-arrow-up-right-dots" style="font-size:250%"></i><br>BUSSINESS GROWTH<br><button style="border:1px solid blueviolet;color: blueviolet;width:40%;margin-left: 20%;">join us now</button></div></div>
+    <div class="col-3"><div class="card" style="text-align:center;"> <i class="fa-solid fa-magnifying-glass" style="font-size:250%"></i><br>MARKET ANALYSIS<br><button style="border:1px solid blueviolet;color: blueviolet;width:40%;margin-left: 20%;">join us now</button></div></div>
+</div>
+<div class="row mt-5" style="background-color: blueviolet;"> 
+<br>
+<br>
+<div class="col-6" style="background-color:blueviolet;"></div>
+<div class="col-6" style="background-color:blueviolet;"></div>
+<br>
+</div>
+        
+    <div class="row mt-5" style="background-color: blueviolet;height: 300%;color:white">
+        <div class="col-4" >
+
+        </div>
+            <div class="col-4" style="text-align: center;font-size: 150%;" >
+Ready! Get Your Free Quote Today
+        </div>
+            <div class="col-4" >
+
+        </div>
+    </div>
+    <div class=row-mt-5 style="background-color: blueviolet;color:white"></div>
+    
+
+    <div class="row" style="background-color: blueviolet;">
+        <div class="col-4" >
+
+        </div>
+            <div class="col-4" style="text-align: center;color:white" >
+We are 24/7 here to chat or call us toll free 454-98345
+        </div>
+            <div class=row-mt-5 style="background-color: darkblueviolet;">&nbsp;</div>
+    <div class="row"style="background-color: darblueviolet;">
+        <div class="col-1"></div>
+        <div class="col-4" >
+            <input type="text" style="height: 100%;width:95%">
+        </div>
+        <div class="col-4" >
+            <input type="text" style="height: 100%;width:95%">
+        </div>
+        <div class="col-3" >
+            <button style="background-color:blueviolet;border: 1px solid black;">Try now</button>
+        </div>
+    </div>
+    <div class=row-mt-5 style="background-color: blueviolet;">&nbsp;</div>
+    <div class=row-mt-5 style="background-color: blueviolet;">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4" style="text-align:center;font-size:190%"><b>Project we have done</b></div>
+        <div class="col-4"></div>
+
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8" style="text-align:center;font-size:100%">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </div>
+        <div class="col-2"></div>
+
+    </div>
+<div class="row">
+    <div class="col-4" style="text-align:center;"><img src="img/b11.jpg" height="50%" width="60%"></div>
+    <div class="col-4" style="text-align:center;"><img src="img/b22.jpg" height="50%" width="60%"></div>
+    <div class="col-4" style="text-align:center;"><img src="img/b33.jpg" height="50%" width="60%"></div>
+
+</div>
+<div class="row">
+    <div class="col-4" style="text-align:center;"><img src="img/b44.jpg" height="50%" width="60%"></div>
+    <div class="col-4" style="text-align:center;"><img src="img/b55.jpg" height="50%" width="60%"></div>
+    <div class="col-4" style="text-align:center;"><img src="img/b66.jpg" height="50%" width="60%"></div>
+
+</div>
+<div class="row">
+    <div class="col-4"></div>
+        <div class="col-4" style="text-align:center;"><button style="background-color:blueviolet;">see more work</button></div>
+        <div class="col-4"></div>
+    </div>
+    <br>
+    <div class="row-mt-5">&nbsp;</div>
+<div class="row">
+    <div class="col-4"> </div>
+    <div class="col-4" style="text-align:center;font-size: 180%;"><b>Our Agency Statistics</b></div>
+    <div class="col-4"> </div>
+
+</div>
+<div class="row">
+    <div class="col-2"> </div>
+    <div class="col-8" style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </div>
+    <div class="col-2"> </div>
+
+</div>
+<div class="row">
+    <div class="col-12" style="text-align:center"><img src="img/b7.webp" height="100%" width="90%"></div>
+    </div>
+    <div class="row">
+        <div class="col-3" style="color:blueviolet;font-size: 180%;text-align: center;"><b> 1,200</b><br><p style="font-size: 80%;color:black">projects done</p></div>
+            <div class="col-3" style="color:blueviolet;font-size: 180%;text-align: center;"><b> 854</b><br><p style="font-size: 80%;color:black">Happy clients</p></div>
+        <div class="col-3" style="color:blueviolet;font-size: 180%;text-align: center;"><b> 15</b><br><p style="font-size: 80%;color:black">GET AWARDS</p></div>
+        <div class="col-3" style="color:blueviolet;font-size: 180%;text-align: center;"><b> 30+</b><br><p style="font-size: 80%;color:black">EMPLOYS</p></div>
+
+
+    </div>
+    <div class="row mt-5">
+        <div class="col-4"></div>
+        <div class="col-4" style="text-align:center;font-size: 200%;"><b>Clients feedback</b></div>
+        <div class="col-4"></div>
+
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8" style="text-align:center;font-size: 80%"><p> Consulted he eagerness unfeeling deficient existence of. Calling nothing end fertile for venture <br>way boy. Esteem spirit temper too say adieus who direct esteem.</p>
+            </div>
+        <div class="col-2"></div>
+
+    </div>
+</div>
+    <div class="container-fluid my-5 p-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/r4.png" class="img-fluid" alt="Image 1" style="height:300px;width:400px;">
+            </div>
+            <div class="col-md-6">
+                <img src="img/a1.jpg" class="img-fluid float-right" alt="Image 2" style="height:60px;width:50px">
+                <h3 class="cs-testimonial__avatar_name">Dhony Anthony</h3>
+                <span>“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look slightly believable.”</span>
+            </div>
+        </div>
+            
+                                     
+        <div class="container p-5 text-center text-dark">
+            <h1 id="i">We Love To Work With Our Partners</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"><img src="img/brand1.png" class="img-fluid"></div>
+                <div class="col-md-3"><img src="img/brand2.png" class="img-fluid"></div>
+                <div class="col-md-3"><img src="img/brand3.png" class="img-fluid"></div>
+                <div class="col-md-3"><img src="img/brand4.png" class="img-fluid"></div>
+            </div>
+        </div>
+    </div>
+       
+        <div class="cs-cta cs-style1 text-center">
+            <div class="cs-cta-in text-center cs-bg__parallax" data-src="img/cta-bg.png">
+                <div class="container">
+                    <div class="cs-cta__in">
+                        <h2 id="hb" style=";height:70px;width:100;color: white;">Are You Ready? Try A Demo For Free Consultation
+                                <button id="hb" style="border-color:white;text-align:center;padding-top:5px;margin-top:10px; margin-:10PX   ;">Contact Now</button>
+
+                            </h2>
+                            <div class="container-fluid p-5" id="abc">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4 id="abb">About</h4><br>
+                    <p class="text-secondary" id="ia">We always try to give our best quality guidence for our all clients. So they will success & growth business well.</p>
+                    <p id="ib"><i class="fa-brands fa-facebook" style="color: #1368fb;"></i>&emsp;
+                        <i class="fa-brands fa-twitter" style="color: #6ba4ff;"></i>&emsp;
+                        <i class="fa-brands fa-square-instagram" style="color: #921d9a;"></i>&emsp;
+                        <i class="fa-brands fa-pinterest-p" style="color: #fd3535;"></i></p>
+
+                </div>
+                <div class="col-md-3">
+                    <h4 id="abb">Services</h4><br>
+                    <p class="text-secondary" id="ic">IT Consultant <br>
+                        Business Growth<br>
+                        Investent Plan<br>
+                        Product Development<br>
+                        Industrial Consultant</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 id="abb">Support</h4><br>
+                    <p class="text-secondary" id="ic">
+                        Documentation<br>
+                        Product<br>
+                        Reporting Issue<br>
+                        Terms & Conditions<br>
+                        Privacy Policy
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h4 id="abb">Quick Links</h4><br>
+                    <p class="text-secondary" id="ic">
+                        Home<br>
+                        About<br>
+                        Services<br>
+                        Pricing<br>
+                        Contact
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center text-secondary mt-5">
+            <footer>© 2020 - Lala by Laralink. All 
+              </div>
+
+             </div>   
+               </div>      
+           </div>          
+    </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
